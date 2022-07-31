@@ -113,7 +113,6 @@ body{
     }
     .content-container{
         gap: 1rem;
-        padding: 1rem;
         padding-block: 0;
     }
 }
