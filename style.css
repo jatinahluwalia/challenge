@@ -106,9 +106,8 @@ body{
         display: none;
     }
     .container{
-        width: 375px;
+        width: min(300px,80vw);
         display: grid;
-        grid-template-rows: 38% 62%;
         height: calc(100vh - 60px);
     }
     .content-container{
