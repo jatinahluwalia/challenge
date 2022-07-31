@@ -111,6 +111,6 @@ body{
         height: calc(100vh - 60px);
     }
     .content-container{
-        gap: 1.75rem;
+        gap: 1rem;
     }
 }
