@@ -106,7 +106,7 @@ body{
         display: none;
     }
     .container{
-        width: min(300px,80vw);
+        width: min(300px,90vw);
         display: grid;
         height: calc(100vh - 60px);
     }
