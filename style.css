@@ -1,0 +1,117 @@
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --fs-paragraph: .875rem;
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0 0% 100%);
+    --dark-cyan-hover: hsl(158, 36%, 15%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cream);
+}
+.container{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.img-container{
+    width: 300px;
+}
+.product-img{
+    width: 300px;
+}
+.perfume{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    letter-spacing: .25rem;
+}
+.content-container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heading{
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;    
+    color: var(--very-dark-blue);
+    line-height: 2rem;
+}
+.description{
+    color: var(--dark-grayish-blue);
+}
+.price-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.discounted-price{
+    font-family: "Fraunces";
+    font-weight: 700;
+    color: var(--dark-cyan);
+    font-size: 2rem;;
+}
+.original-price{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+.cart-button{
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding: .8rem;
+    background-color: var(--dark-cyan);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-button:hover{
+    background-color: var(--dark-cyan-hover);
+}
+.cart-img{
+    margin-inline: .5rem;
+}
+.mobile-img{
+    display: none;
+}
+@media(max-width: 40em){
+    .mobile-img{
+        display: block;
+        width: 100%;
+    }
+    .img-container{
+        display: none;
+    }
+    .container{
+        width: 375px;
+        display: grid;
+        grid-template-rows: 38% 62%;
+        height: calc(100vh - 60px);
+    }
+    .content-container{
+        gap: 1.75rem;
+    }
+}
